@@ -67,7 +67,7 @@ class Login extends JFrame implements ActionListener {    // ActionListener is a
                 ResultSet rs =c.s.executeQuery(str);
 
                 if(rs.next()){
-                    //new Dashboard().setVisible(true);
+                    new Dashboard().setVisible(true);
                     this.setVisible(false);
                 }else{
                     JOptionPane.showMessageDialog(null,"INVALID USERNAME OR PASSWORD ....");
